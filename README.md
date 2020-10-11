@@ -7,7 +7,7 @@ In this project, we are creating the app which will show us the real-time stock 
 
 To check Wireframe for this app Click [here.](https://balsamiq.cloud/sorup41/phd5lfv/rF073) 
 
-To read more information about Stock Money check this [Full guide](https://github.com/shashwattpandeyy/StockMoney/blob/master/Docs/FullGuide.md
+To read more information about Stock Money check this [Full guide](https://github.com/shashwattpandeyy/StockMoney/blob/master/Docs/FullGuide.md)
 
 ## Getting Started
 This project use the Android Studio and Kotlin. To build this project, use the "Import Project" in Android Studio.
