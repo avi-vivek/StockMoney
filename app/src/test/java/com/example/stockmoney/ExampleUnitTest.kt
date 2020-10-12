@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.stockmoney
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
