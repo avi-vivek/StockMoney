@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "749946060422",
-    "firebase_url": "https://stockmoney-2907b.firebaseio.com",
-    "project_id": "stockmoney-2907b",
-    "storage_bucket": "stockmoney-2907b.appspot.com"
+    "project_number": "982980647055",
+    "firebase_url": "https://stockmoney-c9b7d.firebaseio.com",
+    "project_id": "stockmoney-c9b7d",
+    "storage_bucket": "stockmoney-c9b7d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:749946060422:android:6574dcd1742ebb3e54db07",
+        "mobilesdk_app_id": "1:982980647055:android:21ae21ea27b1a0f287f8fa",
         "android_client_info": {
           "package_name": "com.example.stockmoney"
         }
       },
       "oauth_client": [
         {
-          "client_id": "749946060422-c1at07d2r7t66ell14onni214db7qhkl.apps.googleusercontent.com",
+          "client_id": "982980647055-s8krqqhu177gptn4ott3ub64himml6up.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDqp47HejUmJ6KBLyer8OErGqoVFvO8nRg"
+          "current_key": "AIzaSyA4-tnFOf8SfsquKpcTz59Jig_1coFdHE4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "749946060422-c1at07d2r7t66ell14onni214db7qhkl.apps.googleusercontent.com",
+              "client_id": "982980647055-s8krqqhu177gptn4ott3ub64himml6up.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
