@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SignUp">
+    tools:context=".signup">
 
     <ImageView
         android:id="@+id/imageView"
@@ -14,7 +14,7 @@
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/image"
         android:scaleType="fitStart"
-        app:layout_constraintBottom_toTopOf="@+id/username_edittext_signup"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/username_edittext_signup"
+        android:id="@+id/editTextTextPersonName4"
         android:layout_width="314dp"
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
@@ -55,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/email_edittext_signup"
+        android:id="@+id/editTextTextEmailAddress"
         android:layout_width="314dp"
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
@@ -66,13 +66,13 @@
         android:inputType="textEmailAddress"
         android:textSize="20sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/username_edittext_signup"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username_edittext_signup" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
     <EditText
-        android:id="@+id/phonenumber_edittext_signup"
+        android:id="@+id/editTextPhone"
         android:layout_width="314dp"
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
@@ -83,13 +83,13 @@
         android:inputType="phone"
         android:textSize="20sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/email_edittext_signup"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_edittext_signup" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <EditText
-        android:id="@+id/password_edittext_signup"
+        android:id="@+id/editTextTextPassword"
         android:layout_width="314dp"
         android:layout_height="47dp"
         android:layout_marginStart="84dp"
@@ -100,13 +100,13 @@
         android:inputType="textPassword"
         android:textSize="20sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/phonenumber_edittext_signup"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phonenumber_edittext_signup" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
 
     <Button
-        android:id="@+id/signup_button"
+        android:id="@+id/button"
         android:layout_width="325dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
@@ -122,7 +122,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_edittext_signup"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
