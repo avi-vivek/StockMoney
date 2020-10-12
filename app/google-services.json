@@ -34,6 +34,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982980647055:android:a5c5c6f966c8af4187f8fa",
+        "android_client_info": {
+          "package_name": "gla.ac.in.miniproject1.stockmoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982980647055-s8krqqhu177gptn4ott3ub64himml6up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4-tnFOf8SfsquKpcTz59Jig_1coFdHE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982980647055-s8krqqhu177gptn4ott3ub64himml6up.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
