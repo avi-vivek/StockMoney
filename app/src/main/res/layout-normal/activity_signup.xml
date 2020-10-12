@@ -11,7 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="604dp"
         android:layout_height="509dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="16dp"
         android:contentDescription="@string/image"
         android:scaleType="fitStart"
         android:src="@drawable/image2"
@@ -25,6 +25,7 @@
         android:layout_width="88dp"
         android:layout_height="41dp"
         android:layout_marginTop="356dp"
+        android:layout_marginTop="364dp"
         android:gravity="center|fill_vertical"
         android:text="@string/sign_up"
         android:textColor="@android:color/black"
@@ -116,8 +117,8 @@
     <Button
         android:id="@+id/signup_button"
         android:layout_width="325dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_layout"
         android:text="@string/sign_up"
@@ -126,10 +127,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_edittext_signup"
         app:layout_constraintVertical_bias="0.205" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.218" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
