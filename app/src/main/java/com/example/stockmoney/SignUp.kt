@@ -1,7 +1,9 @@
 package com.example.stockmoney
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -49,5 +51,10 @@ class SignUp : AppCompatActivity() {
                     .show()
             }
 
+    }
+
+    fun openLogin(view: View) {
+        val intent = Intent(this, Login::class.java)
+        startActivity(intent)
     }
 }
