@@ -24,7 +24,7 @@
         android:id="@+id/textView4"
         android:layout_width="101dp"
         android:layout_height="39dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="370dp"
         android:layout_marginEnd="64dp"
         android:fontFamily="@font/montserratregular"
         android:gravity="bottom|fill_vertical"
