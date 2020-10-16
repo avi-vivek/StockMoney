@@ -7,7 +7,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_signup.*
+
 
 class SignUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +37,7 @@ class SignUp : AppCompatActivity() {
         Log.d("RegisterActivity", "PhoneNumber: " + phonenumber)
 
         // Firebase Authentication to create a user with email and password
+        val db = FirebaseFirestore.getInstance()
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener {
                 if (!it.isSuccessful) return@addOnCompleteListener
@@ -44,6 +47,30 @@ class SignUp : AppCompatActivity() {
                     "RegisterActivity",
                     "Successfully created user with uid: ${it.result?.user?.uid}"
                 )
+                // Create a new user with a first and last name
+
+                // Create a new user with a first and last name
+                val user = hashMapOf(
+                    "Phone Number" to phonenumber,
+                    "Username" to username,
+                )
+                db.collection("UsersDetails").document("${it.result?.user?.uid}")
+                    .set(user)
+                    .addOnSuccessListener {
+                        Log.d(
+                            "RegisterActivity",
+                            "Details added with ID"
+                        )
+                        val intent = Intent(this, MainActivity2()::class.java)
+                        startActivity(intent)
+                    }
+                    .addOnFailureListener { e ->
+                        Log.w(
+                            "RegisterActivity",
+                            "Error adding document",
+                            e
+                        )
+                    }
             }
             .addOnFailureListener {
                 Log.d("RegisterActivity", "Failed to create user: ${it.message}")

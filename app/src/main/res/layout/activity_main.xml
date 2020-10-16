@@ -63,6 +63,7 @@
         android:fontFamily="@font/seguisym"
         android:textSize="14sp"
         android:textStyle="italic"
+        android:onClick="mainActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
