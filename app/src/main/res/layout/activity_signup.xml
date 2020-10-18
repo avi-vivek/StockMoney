@@ -33,7 +33,7 @@
         android:fontFamily="@font/montserratregular"
         android:gravity="center"
         android:text="@string/sign_up"
-        android:textColor="@android:color/black"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

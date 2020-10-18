@@ -20,7 +20,12 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="sign_in">Sign in</string>
-    <string name="forgot_password">Forgot Password?</string>
     <string name="already_have_account">Already have Account?</string>
     <string name="textview">TextView</string>
+    <string name="guestpage">guestPage</string>
+    <string name="guestimage">GuestImage</string>
+    <string name="content">content</string>
+    <string name="search">Search</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="forgot_password">Forgot Password</string>
 </resources>
