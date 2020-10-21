@@ -64,7 +64,7 @@
             android:layout_marginBottom="60dp"
             android:background="@drawable/guest_botton"
             android:fontFamily="@font/seguisym"
-            android:onClick="mainActivity"
+            android:onClick="startGuest"
             android:text="@string/guest"
             android:textSize="14sp"
             android:textStyle="italic"
