@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun mainActivity(view: View) {
-        val intent = Intent(this, MainActivity2::class.java)
+    fun startGuest(view: View) {
+        val intent = Intent(this, Guest::class.java)
         startActivity(intent)
     }
 

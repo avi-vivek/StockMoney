@@ -46,12 +46,13 @@ class Login : AppCompatActivity() {
                 }
         }
         forgot_password_login.setOnClickListener {
-            val builder = AlertDialog.Builder(this)
-            builder.setTitle("Enter Your Email")
             val view = layoutInflater.inflate(R.layout.dialog_forgot_password, null)
-            val email = view.findViewById<EditText>(R.id.forgot_password_email)
+            val builder = AlertDialog.Builder(this)
             builder.setView(view)
-            builder.setPositiveButton("Reset", DialogInterface.OnClickListener { _, _ ->
+            builder.setTitle("Enter Your Email")
+            builder.setCancelable(false)
+            val email = view.findViewById<EditText>(R.id.forgot_password_email)
+            builder.setPositiveButton("Submit", DialogInterface.OnClickListener { _, _ ->
                 forgotPassword(email)
             })
             builder.setNegativeButton("Close", DialogInterface.OnClickListener { _, _ -> })
