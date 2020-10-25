@@ -45,18 +45,17 @@
 
         <ImageView
             android:id="@+id/textBackground"
-            android:layout_width="432dp"
+            android:layout_width="wrap_content"
             android:layout_height="319dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/no"
             android:scaleType="fitStart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/guestBanner"
             app:layout_constraintVertical_chainStyle="spread"
-            android:contentDescription="@string/no"
             app:srcCompat="@drawable/about" />
 
         <TextView
