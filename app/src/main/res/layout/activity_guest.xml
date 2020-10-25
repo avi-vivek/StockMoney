@@ -18,8 +18,8 @@
             android:id="@+id/guestBanner"
             android:layout_width="match_parent"
             android:layout_height="374dp"
-            android:background="@drawable/rectangle"
             android:adjustViewBounds="true"
+            android:background="@drawable/rectangle"
             android:contentDescription="@string/guestpage"
             android:scaleType="fitEnd"
             android:src="@drawable/maskgroup"
@@ -45,11 +45,11 @@
 
         <ImageView
             android:id="@+id/textBackground"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="319dp"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/no"
+            android:paddingLeft="2dp"
             android:scaleType="fitStart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -60,9 +60,9 @@
 
         <TextView
             android:id="@+id/textStockMoney"
-            android:layout_width="336dp"
+            android:layout_width="326dp"
             android:layout_height="62dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="17dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/montserratbold"
             android:paddingStart="10dp"
@@ -72,8 +72,9 @@
             android:textStyle="normal"
             app:layout_constraintBottom_toTopOf="@+id/briefStockMoney"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textBackground"
             tools:ignore="RtlSymmetry" />
 
         <TextView
@@ -89,10 +90,11 @@
             android:textColor="@color/white"
             android:textSize="21sp"
             android:textStyle="normal"
-            app:layout_constraintBottom_toBottomOf="@+id/textBackground"
+            app:layout_constraintBottom_toTopOf="@+id/textBackground"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textStockMoney"
             tools:ignore="RtlSymmetry" />
 
         <EditText
