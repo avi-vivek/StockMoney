@@ -34,7 +34,7 @@ class Login : AppCompatActivity() {
                     if (!it.isSuccessful) return@addOnCompleteListener
                     // else
                     Log.d("Main", "Successfully Login")
-                    val intent = Intent(this, MainActivity2::class.java)
+                    val intent = Intent(this, Guest::class.java)
                     startActivity(intent)
                 }
                 .addOnFailureListener {
