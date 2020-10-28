@@ -111,6 +111,7 @@
             android:focusable="true"
             android:gravity="fill_vertical"
             android:hint="@string/search"
+            android:drawablePadding="8dp"
             android:iconifiedByDefault="false"
             android:inputType="textPersonName"
             android:orientation="vertical"
