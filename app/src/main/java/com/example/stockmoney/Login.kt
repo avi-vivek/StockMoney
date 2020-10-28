@@ -66,13 +66,14 @@ class Login : AppCompatActivity() {
         }
 
         if (!Patterns.EMAIL_ADDRESS.matcher(email.text.toString()).matches()) {
+            Toast.makeText(this, "Please Enter valid email", Toast.LENGTH_SHORT).show()
             return
         }
 
         FirebaseAuth.getInstance().sendPasswordResetEmail(email.text.toString())
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    Toast.makeText(this, "Email Sent.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Reset Link Sent.", Toast.LENGTH_SHORT).show()
                 }
             }
             .addOnFailureListener {
