@@ -2,9 +2,12 @@ package com.example.stockmoney
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
+import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import androidx.appcompat.app.AppCompatActivity
+
 
 class Guest : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -31,5 +34,13 @@ class Guest : AppCompatActivity() {
 
         search.setAdapter(adapter)
 
+//        Log.d("Check","${}")
+
+        search.onItemClickListener = OnItemClickListener { parent, view, position, id ->
+            Log.d(
+                "Check",
+                search.text.toString()
+            )
+        }
     }
 }
