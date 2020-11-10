@@ -1,5 +1,6 @@
 package com.example.stockmoney
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.widget.AdapterView.OnItemClickListener
@@ -9,9 +10,11 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class Guest : AppCompatActivity() {
+    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_guest)
+
 
         val search = findViewById<AutoCompleteTextView>(R.id.searchBarOfMain)
 

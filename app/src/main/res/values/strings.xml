@@ -32,4 +32,7 @@
     <string name="guestimageamge" />
     <string name="no">No</string>
     <string name="search">Search</string>
+    <string name="todo">TODO</string>
+    <string name="hi">Hi!</string>
+    <string name="stock">Stock</string>
 </resources>
