@@ -8,20 +8,15 @@
     android:fillViewport="true"
     android:overScrollMode="always">
 
-    <androidx.drawerlayout.widget.DrawerLayout
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:context=".Guest"
-            tools:ignore="ExtraText">
+        android:orientation="vertical"
+        tools:context=".Guest"
+        tools:ignore="ExtraText">
 
 
-            <ImageView
+        <ImageView
             android:id="@+id/guestBanner"
             android:layout_width="match_parent"
             android:layout_height="374dp"
@@ -129,28 +124,6 @@
             android:padding="14dp"
             tools:ignore="LabelFor" />
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="40dp"
-                android:layout_height="100dp"
-                android:contentDescription="@string/todo"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.026"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/naviigation_guest"
-                tools:ignore="ContentDescription" />
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <com.google.android.material.navigation.NavigationView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:fitsSystemWindows="true">
-
-        </com.google.android.material.navigation.NavigationView>
-    </androidx.drawerlayout.widget.DrawerLayout>
-
 </ScrollView>
