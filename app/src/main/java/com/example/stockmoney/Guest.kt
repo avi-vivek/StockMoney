@@ -7,13 +7,18 @@ import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import androidx.appcompat.app.AppCompatActivity
+import com.cuberto.liquid_swipe.LiquidPager
 
 
 class Guest : AppCompatActivity() {
+
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_guest)
+
+        val pager = findViewById<LiquidPager>(R.id.pager)
+        pager.adapter = Adapter(supportFragmentManager)
 
 
         val search = findViewById<AutoCompleteTextView>(R.id.searchBarOfMain)
@@ -66,5 +71,6 @@ class Guest : AppCompatActivity() {
             intent.putExtra("cid", cid)
             startActivity(intent)
         }
+
     }
 }
