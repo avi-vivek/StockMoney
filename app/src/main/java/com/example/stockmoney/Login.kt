@@ -35,6 +35,8 @@ class Login : AppCompatActivity() {
                     // else
                     Log.d("Main", "Successfully Login")
                     val intent = Intent(this, Guest::class.java)
+//                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
                     startActivity(intent)
                 }
                 .addOnFailureListener {
