@@ -12,6 +12,7 @@
         android:label="Stock Money"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:windowSoftInputMode="adjustPan|adjustResize"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -21,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity2" />
-        <activity android:name=".Guest" />
+        <activity android:name=".homescreen" />
         <activity android:name=".Login" />
         <activity android:name=".SignUp" />
     </application>

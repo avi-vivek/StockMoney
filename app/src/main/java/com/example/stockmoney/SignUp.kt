@@ -61,7 +61,7 @@ class SignUp : AppCompatActivity() {
                             "RegisterActivity",
                             "Details added with ID"
                         )
-                        val intent = Intent(this, Guest::class.java)
+                        val intent = Intent(this, homescreen::class.java)
                         startActivity(intent)
                     }
                     .addOnFailureListener { e ->
