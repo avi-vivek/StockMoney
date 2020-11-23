@@ -29,6 +29,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
+                android:contentDescription="@string/todo"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -40,7 +41,7 @@
                 android:fontFamily="@font/montserratbold"
                 android:gravity="center"
                 android:paddingBottom="20dp"
-                android:text="Prediction Details"
+                android:text="@string/prediction_details"
                 android:textColor="@color/white"
                 android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -69,9 +70,10 @@
                         android:gravity="center"
                         android:padding="5dip"
                         android:paddingEnd="25dp"
-                        android:text="1st Day"
+                        android:text="@string/_1st_day"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        tools:ignore="RtlSymmetry" />
 
                     <TextView
                         android:id="@+id/first_day_prediction"
@@ -90,9 +92,10 @@
                         android:gravity="center"
                         android:padding="5dip"
                         android:paddingEnd="25dp"
-                        android:text="2nd Day"
+                        android:text="@string/_2nd_day"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        tools:ignore="RtlSymmetry" />
 
                     <TextView
                         android:id="@+id/second_day_prediction"
@@ -111,9 +114,10 @@
                         android:gravity="center"
                         android:padding="5dip"
                         android:paddingEnd="25dp"
-                        android:text="3rd Day"
+                        android:text="@string/_3rd_day"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        tools:ignore="RtlSymmetry" />
 
                     <TextView
                         android:id="@+id/third_day_prediction"
@@ -132,9 +136,10 @@
                         android:gravity="center"
                         android:padding="5dip"
                         android:paddingEnd="25dp"
-                        android:text="4th Day"
+                        android:text="@string/_4th_day"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        tools:ignore="RtlSymmetry" />
 
                     <TextView
                         android:id="@+id/fourth_day_prediction"
@@ -153,9 +158,10 @@
                         android:gravity="center"
                         android:padding="5dip"
                         android:paddingEnd="25dp"
-                        android:text="5th Day"
+                        android:text="@string/_5th_day"
                         android:textColor="@color/white"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        tools:ignore="RtlSymmetry" />
 
                     <TextView
                         android:id="@+id/fifth_day_prediction"
@@ -177,7 +183,7 @@
                 android:fontFamily="@font/montserratbold"
                 android:gravity="center"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

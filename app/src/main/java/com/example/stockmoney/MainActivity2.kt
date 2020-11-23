@@ -32,7 +32,7 @@ class MainActivity2 : AppCompatActivity() {
         val client = OkHttpClient()
         val test = client.newCall(request).enqueue(object : Callback {
             override fun onResponse(response: Response?) {
-                println("RUN")
+                println("api response")
                 val body = response?.body()?.string()
 
                 val obj = JSONObject(body!!)

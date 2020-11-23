@@ -38,8 +38,6 @@ class Login : AppCompatActivity() {
                     val intent = Intent(this, homescreen::class.java)
 //                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent)
-                    val toast =
-                    finish()
                 }
                 .addOnFailureListener {
                     Log.d("Main", "Failed to Login ${it.message}")
@@ -84,5 +82,11 @@ class Login : AppCompatActivity() {
                 Toast.makeText(this, "Please Enter valid email", Toast.LENGTH_SHORT).show()
 
             }
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }

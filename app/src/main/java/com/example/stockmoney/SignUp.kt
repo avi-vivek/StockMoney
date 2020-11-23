@@ -65,7 +65,6 @@ class SignUp : AppCompatActivity() {
                         )
                         val intent = Intent(this, homescreen::class.java)
                         startActivity(intent)
-                        finish()
                     }
                     .addOnFailureListener { e ->
                         Log.w(
@@ -81,6 +80,12 @@ class SignUp : AppCompatActivity() {
                     .show()
             }
 
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     fun openLogin(view: View) {

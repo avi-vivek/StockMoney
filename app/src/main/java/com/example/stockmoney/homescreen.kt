@@ -1,12 +1,14 @@
 package com.example.stockmoney
 
 import android.annotation.SuppressLint
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.View.OnTouchListener
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -58,5 +60,21 @@ class homescreen : AppCompatActivity() {
             intent.putExtra("name", key)
             startActivity(intent)
         }
+    }
+
+    override fun onBackPressed() {
+
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Are you sure")
+        builder.setMessage("Do you Want to Logout?")
+        builder.setPositiveButton("YES") { dialogInterface: DialogInterface, i: Int ->
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        builder.setNegativeButton("NO") { dialogInterface: DialogInterface, i: Int ->
+            dialogInterface.cancel()
+        }
+        builder.show()
     }
 }
