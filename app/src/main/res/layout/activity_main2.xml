@@ -12,8 +12,19 @@
         android:layout_centerInParent="true"
         android:clipToPadding="false"
         android:foregroundGravity="center"
-        android:overScrollMode="never" >
+        android:overScrollMode="never" />
 
-    </androidx.viewpager.widget.ViewPager>
+    <include
+        android:id="@+id/llProgresshome"
+        layout="@layout/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:visibility="gone" />
 
 </RelativeLayout>

@@ -15,6 +15,8 @@ class Fragment1(private val list: ArrayList<MyModel>) : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+//        llProgresshome?.visibility= View.GONE
+
         val view = inflater.inflate(R.layout.fragment_1, container, false)
         val model = list[0]
         val name = model.name

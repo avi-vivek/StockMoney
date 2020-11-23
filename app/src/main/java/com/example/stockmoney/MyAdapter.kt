@@ -9,6 +9,7 @@ class MyAdapter(
     private val list: ArrayList<MyModel>,
     private val prediction: Any
 ) : FragmentPagerAdapter(fm) {
+
     override fun getCount(): Int {
         return 2
     }

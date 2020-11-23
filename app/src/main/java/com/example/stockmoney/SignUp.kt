@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -21,12 +22,22 @@ class SignUp : AppCompatActivity() {
     }
 
     private fun performRegister() {
+        llProgressBar1?.visibility = View.VISIBLE
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
+            WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE
+        )
+
         val email = email_edittext_signup.text.toString()
         val password = password_edittext_signup.text.toString()
         val username = username_edittext_signup.text.toString()
         val phonenumber = phonenumber_edittext_signup.text.toString()
 
         if (email.isEmpty() || password.isEmpty() || username.isEmpty() || phonenumber.isEmpty()) {
+
+            llProgressBar1?.visibility = View.GONE
+            window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
+
             Toast.makeText(this, "Please enter above requirements", Toast.LENGTH_SHORT).show()
             return
         }
@@ -65,6 +76,7 @@ class SignUp : AppCompatActivity() {
                         )
                         val intent = Intent(this, homescreen::class.java)
                         startActivity(intent)
+                        finish()
                     }
                     .addOnFailureListener { e ->
                         Log.w(
@@ -72,14 +84,21 @@ class SignUp : AppCompatActivity() {
                             "Error adding document",
                             e
                         )
+
+                        llProgressBar1?.visibility = View.GONE
+
+                        window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
                     }
             }
             .addOnFailureListener {
                 Log.d("RegisterActivity", "Failed to create user: ${it.message}")
+
+                llProgressBar1?.visibility = View.GONE
+                window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
+
                 Toast.makeText(this, "Failed to create user: ${it.message}", Toast.LENGTH_SHORT)
                     .show()
             }
-
     }
 
     override fun onBackPressed() {
@@ -91,5 +110,6 @@ class SignUp : AppCompatActivity() {
     fun openLogin(view: View) {
         val intent = Intent(this, Login::class.java)
         startActivity(intent)
+        finish()
     }
 }

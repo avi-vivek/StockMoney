@@ -169,5 +169,17 @@
             tools:ignore="OnClick" />
 
 
+        <include
+            android:id="@+id/llProgressBar1"
+            layout="@layout/progress_bar"
+            android:layout_width="226dp"
+            android:layout_height="161dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
