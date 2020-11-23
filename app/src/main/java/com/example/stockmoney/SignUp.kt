@@ -47,6 +47,8 @@ class SignUp : AppCompatActivity() {
                     "RegisterActivity",
                     "Successfully created user with uid: ${it.result?.user?.uid}"
                 )
+                Toast.makeText(this, "Your Account created Successfully", Toast.LENGTH_SHORT).show()
+
                 // Create a new user with a first and last name
 
                 // Create a new user with a first and last name
@@ -63,6 +65,7 @@ class SignUp : AppCompatActivity() {
                         )
                         val intent = Intent(this, homescreen::class.java)
                         startActivity(intent)
+                        finish()
                     }
                     .addOnFailureListener { e ->
                         Log.w(

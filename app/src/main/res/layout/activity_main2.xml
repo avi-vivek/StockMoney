@@ -12,6 +12,8 @@
         android:layout_centerInParent="true"
         android:clipToPadding="false"
         android:foregroundGravity="center"
-        android:overScrollMode="never" />
+        android:overScrollMode="never" >
+
+    </androidx.viewpager.widget.ViewPager>
 
 </RelativeLayout>

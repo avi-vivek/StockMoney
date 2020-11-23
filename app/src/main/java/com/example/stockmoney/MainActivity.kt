@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     fun startGuest(view: View) {
         val intent = Intent(this, homescreen::class.java)
         startActivity(intent)
+        finish()
     }
 
     fun openSignUp(view: View) {

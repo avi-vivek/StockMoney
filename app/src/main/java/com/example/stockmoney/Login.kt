@@ -34,10 +34,12 @@ class Login : AppCompatActivity() {
                     if (!it.isSuccessful) return@addOnCompleteListener
                     // else
                     Log.d("Main", "Successfully Login")
+                    Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this, homescreen::class.java)
 //                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
                     startActivity(intent)
+                    val toast =
+                    finish()
                 }
                 .addOnFailureListener {
                     Log.d("Main", "Failed to Login ${it.message}")
