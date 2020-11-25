@@ -38,6 +38,7 @@ class homescreen : AppCompatActivity() {
             arrayListOf("Alibaba Group") to "BABA",
             arrayListOf("Reliance Industries Limited") to "RELIANCE.NS"
         )
+
         val adapter =
             ArrayAdapter(this, android.R.layout.simple_list_item_1, names.keys.flatten())
 
@@ -72,7 +73,7 @@ class homescreen : AppCompatActivity() {
 
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Are you sure")
-        builder.setMessage("Do you Want to Logout?")
+        builder.setMessage("Do you Want to Exit?")
         builder.setPositiveButton("YES") { dialogInterface: DialogInterface, i: Int ->
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

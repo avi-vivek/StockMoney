@@ -16,7 +16,7 @@
 
     <include
         android:id="@+id/llProgresshome"
-        layout="@layout/progress_bar"
+        layout="@layout/progressbar_load"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
